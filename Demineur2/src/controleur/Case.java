@@ -2,6 +2,7 @@ package controleur;
 
 
 import java.awt.Color;
+import java.awt.Image;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -62,9 +63,12 @@ public class Case {
 		this.bouton.setEnabled(false);
 	}
 	public void revelerExplosion() { //utilise lorsque clic sur case bombe (fin de partie)
-		ImageIcon redbombe = new ImageIcon("src/images/Bombe.png");
+		ImageIcon redbombe = new ImageIcon("src/images/Explosion.png");
+		Image image = redbombe.getImage();
+		Image newimage = image.getScaledInstance(50, 50, Image.SCALE_AREA_AVERAGING);
+		ImageIcon redbombeRES = new ImageIcon(newimage);
 		this.bouton.setIcon(null);
-		this.bouton.setDisabledIcon(redbombe);
+		this.bouton.setDisabledIcon(redbombeRES);
 	}
 	
 	public int getBombe() {
