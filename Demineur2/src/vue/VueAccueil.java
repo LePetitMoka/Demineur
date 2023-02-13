@@ -6,8 +6,6 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
 
 public class VueAccueil extends JFrame implements ActionListener {
 
@@ -16,10 +14,6 @@ public class VueAccueil extends JFrame implements ActionListener {
 	private JButton btP = new JButton("Aleatoire");
 	private JButton btPD = new JButton("Dimensions");
 	private JButton btPDB = new JButton("Dim + Bombe");
-
-	
-	private JTextField txtDim = new JTextField();
-	private JTextField txtBombes = new JTextField();
 	
 	private PanelPartie unPanelP = new PanelPartie();
 	private PanelPartieDim unPanelPD = new PanelPartieDim();

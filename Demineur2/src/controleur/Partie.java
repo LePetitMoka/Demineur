@@ -5,7 +5,6 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 
-import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -75,6 +74,8 @@ public class Partie extends JFrame implements ActionListener, MouseListener{
 				this.add(uneGrille.getCases()[x][y].getBouton());
 			}
 		}
+		//placement des Labels
+		this.add(this.uneGrille.getScoreLabel());
 		
 		//rendre les boutons ecoutables
 		for (int x = 0; x < this.dimGrille; x++) {

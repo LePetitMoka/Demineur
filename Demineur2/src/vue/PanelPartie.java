@@ -5,16 +5,12 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
-import javax.swing.JPanel;
 
 import controleur.Demineur;
 
 public class PanelPartie extends PanelGeneralPartie implements ActionListener {
 
-	private JButton btJouer = new JButton("Jouer");
-	
-	private JPanel panelForm = new JPanel();
-	
+	private JButton btJouer = new JButton("Jouer");	
 	
 	public PanelPartie() {
 		super(Color.orange);
